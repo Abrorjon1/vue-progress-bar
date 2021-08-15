@@ -11,6 +11,7 @@
           <a href="#">Portfolio</a>
         </nav>
       </div>
+      <Progressbar />
       <Post />
     </main>
   </div>
@@ -18,10 +19,12 @@
 
 <script>
 import Post from './components/Post'
+import Progressbar from './components/Progressbar.vue'
 export default {
   name: 'App',
   components: {
-    Post
+    Post,
+    Progressbar
   }
 }
 </script>
