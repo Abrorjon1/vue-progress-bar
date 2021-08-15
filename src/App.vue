@@ -60,7 +60,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000;
+    background: #002337;
     padding: 30px;
   }
   header h1{

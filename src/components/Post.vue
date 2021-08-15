@@ -78,7 +78,7 @@ export default {
     width: 100%;
     flex: 1 1 100%;
     max-height: calc(100vh - 80px);
-    background: crimson;
+    background: #adaaa1;
     overflow: scroll;
   }
   article .content{
