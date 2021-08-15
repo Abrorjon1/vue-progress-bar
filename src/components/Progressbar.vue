@@ -1,14 +1,16 @@
 <template>
 	<div class="progress-bar">
-		<div class="progress-inner">
-			<span>0%</span>
+		<div class="progress-inner" 
+		     :style="`width:${progress}%;`">
+			<span>{{this.progress}}%</span>
 		</div>
 	</div>
 </template>
 
 <script>
 export default{
-	name:'progressbar'
+	name:'progressbar',
+	props:['progress']
 }
 </script>
 	

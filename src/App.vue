@@ -3,7 +3,7 @@
     <main>
       <div class="navigation">
         <header>
-          <h1>Salimov Mirjalol {{progress}}</h1>
+          <h1>Salimov Mirjalol</h1>
         </header>
         <nav>
           <a href="#">About Us</a>
@@ -11,7 +11,7 @@
           <a href="#">Portfolio</a>
         </nav>
       </div>
-      <Progressbar />
+      <Progressbar :progress="progress"/>
       <Post @progressUpdate="setProgress"/>
     </main>
   </div>
