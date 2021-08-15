@@ -57,7 +57,19 @@
 
 <script>
 export default {
-  name: 'post'
+  name: 'post',
+  mounted(){
+    this.$el.addEventListener('scroll', function (){
+       let scrollTop = this.$el.scrollTop
+       let clientHeight = this.$el.clientHeight
+       let scrollHeight = this.$el.scrollHeight
+
+       let scrollPercent = Math.round((scrollTop) / (scrollHeight - clientHeight) * 100)
+
+       this.$emit('progressUpdate' , scrollPercent)  
+    
+    }.bind(this))
+  }
 }
 </script>
 

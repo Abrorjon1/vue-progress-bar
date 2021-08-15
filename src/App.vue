@@ -3,7 +3,7 @@
     <main>
       <div class="navigation">
         <header>
-          <h1>Samar Badriddinov</h1>
+          <h1>Salimov Mirjalol {{progress}}</h1>
         </header>
         <nav>
           <a href="#">About Us</a>
@@ -12,7 +12,7 @@
         </nav>
       </div>
       <Progressbar />
-      <Post />
+      <Post @progressUpdate="setProgress"/>
     </main>
   </div>
 </template>
@@ -25,6 +25,16 @@ export default {
   components: {
     Post,
     Progressbar
+  },
+  data(){
+    return{
+      progress:0
+    }
+  },
+  methods:{
+    setProgress(progress){
+      this.progress = progress
+    }
   }
 }
 </script>
